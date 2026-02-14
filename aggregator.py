@@ -45,7 +45,7 @@ def generate_html(news_items):
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Memeorandum Clone</title>
+    <title>Memeorandum Flix</title>
     <style>
         body {{ font-family: Arial, sans-serif; background-color: white; color: black; margin: 10px; font-size: 13px; }}
         a {{ color: #0000cc; text-decoration: none; }}
@@ -70,8 +70,8 @@ def generate_html(news_items):
 </head>
 <body>
     <div class="header">
-        <h1>memeorandum <span style="color:red">clone</span></h1>
-        <div class="timestamp">Stand: {now} | Mülheim an der Ruhr Edition</div>
+        <h1>memeorandum <span style="color:red">flix</span></h1>
+        <div class="timestamp">Stand: {now}</div>
     </div>
     
     <div class="container">
