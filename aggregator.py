@@ -1,5 +1,6 @@
 import feedparser
 import datetime
+from zoneinfo import ZoneInfo
 
 # All your desired feeds
 FEEDS = {
@@ -38,7 +39,9 @@ def fetch_all_news():
     return sorted(items, key=lambda x: x['time'], reverse=True)
 
 def generate_html(news_items):
-    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    # Get current time in German timezone
+    berlin_tz = ZoneInfo("Europe/Berlin")
+    now = datetime.datetime.now(berlin_tz).strftime("%Y-%m-%d %H:%M:%S")
     
     # Memeorandum CSS style
     html_content = f"""<!DOCTYPE html>
@@ -71,7 +74,7 @@ def generate_html(news_items):
 <body>
     <div class="header">
         <h1>memeorandum <span style="color:red">flix</span></h1>
-        <div class="timestamp">Stand: {now}</div>
+        <div class="timestamp">Stand: {now} | {len(news_items)} articles loaded</div>
     </div>
     
     <div class="container">
