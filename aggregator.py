@@ -49,6 +49,7 @@ def generate_html(news_items):
 <head>
     <meta charset="UTF-8">
     <title>Memeorandum Flix</title>
+    <link rel="icon" type="image/png" href="Generic_Feed-icon.svg.png">
     <style>
         body {{ font-family: Arial, sans-serif; background-color: white; color: black; margin: 10px; font-size: 13px; }}
         a {{ color: #0000cc; text-decoration: none; }}
