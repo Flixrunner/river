@@ -16,7 +16,8 @@ FEEDS = {
     "Washington Post": "https://feeds.washingtonpost.com/rss/politics",
     "The Economist": "https://www.economist.com/politics-this-week/rss.xml",
     #"WAZ Mülheim": "https://www.waz.de/lokales/muelheim/rss",  darf man wohl garnicht einfach so abfragen
-    "The Atlantic": "https://www.theatlantic.com/feed/all/"
+    "The Atlantic": "https://www.theatlantic.com/feed/all/",
+    "kriegsdotnet": "https://kriegs.net/portfolio/wallpapers/feed/"
 }
 
 def fetch_all_news():
