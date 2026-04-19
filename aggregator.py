@@ -15,7 +15,7 @@ FEEDS = {
     "Politico US": "https://rss.politico.com/politics-news.xml",
     "Washington Post": "https://feeds.washingtonpost.com/rss/politics",
     "The Economist": "https://www.economist.com/politics-this-week/rss.xml",
-    #"WAZ Mülheim": "https://www.waz.de/lokales/muelheim/rss",  darf man wohl garnicht einfach so abfragen
+    #"WAZ Mülheim": "https://www.waz.de/lokales/muelheim/rss",  darf man wohl garnicht einfach so abfragen?
     "The Atlantic": "https://www.theatlantic.com/feed/all/",
     "kriegsdotnet": "https://kriegs.net/portfolio/wallpapers/feed/"
 }
